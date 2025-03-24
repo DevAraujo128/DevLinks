@@ -90,14 +90,19 @@ body {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  animation: slide-back .2s;
+  cursor: pointer;
 
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  /* "forwars" mantém as propriedades no final da animação para não voltar ao inicio. */
+  animation: slide-in 0.4s forwards;
 }
 
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
 
 #switch span{
   display: block;
@@ -181,5 +186,29 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+    #profile img {
+      border: 2px solid rgba(251, 251, 251, 0.242);
+    }
+
+  }
+}
+
+/* animation */
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
