@@ -31,7 +31,7 @@
 
 body {
   background: var(--bg-ur) no-repeat top center/cover;
-
+  height: 100vh;
   /* background-image: var(--bg-ur);
   background-repeat: no-repeat;
   background-position: top center;
@@ -63,7 +63,7 @@ body {
 }
 
 #profile p {
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px;
   margin-top: 8px;
   padding: 24px;
@@ -171,4 +171,15 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+ /* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
