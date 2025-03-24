@@ -37,6 +37,8 @@ body {
   background-position: top center;
   background-size: cover; */
 
+  animation: test 0.8s ease-in-out;
+
 }
 
 /* container */
@@ -59,6 +61,8 @@ body {
   border-radius: 100%;
   width: 112px;
   border: 2px solid rgba(255, 255, 255, 0.6);
+  height: 112px;
+  object-fit: cover; /* Garante que a imagem preencha o container sem distorcer */
 
 }
 
@@ -187,7 +191,7 @@ footer {
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
     #profile img {
-      border: 2px solid rgba(251, 251, 251, 0.242);
+      border: 3px solid rgba(51, 51, 51, 0.698);
     }
 
   }
@@ -198,9 +202,11 @@ footer {
 @keyframes slide-in {
   from {
     left: 0;
+
   }
   to {
     left: 50%;
+
   }
 }
 
@@ -210,5 +216,16 @@ footer {
   }
   to {
     left: 0;
+  }
+}
+
+@keyframes test {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
