@@ -1,47 +1,127 @@
-<h1 align="center"> NLW DevLinks </h1>
+# DevLinks
 
-<p align="center">
-Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
-</p>
+Uma página de links pessoal desenvolvida durante o curso Explorer da Rocketseat. Este projeto apresenta um design moderno e responsivo com funcionalidade de alternância entre modo claro e escuro.
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
+## 🚀 Funcionalidades
 
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
-</p>
+- **Design Responsivo**: Adaptável para dispositivos móveis e desktop
+- **Alternância de Tema**: Botão para alternar entre modo claro e escuro
+- **Links Pessoais**: Seção para links importantes e portfólio
+- **Redes Sociais**: Ícones para GitHub, Instagram, Discord e LinkedIn
+- **Animações Suaves**: Transições e animações CSS para melhor experiência do usuário
 
-<br>
+## 🛠️ Tecnologias Utilizadas
 
-<p align="center">
-  <img alt="projeto DevLinks" src=".github/preview.png" width="100%">
-</p>
+- **HTML5**: Estrutura semântica
+- **CSS3**: Estilização com variáveis CSS e animações
+- **JavaScript**: Funcionalidade de alternância de tema
+- **Ionicons**: Ícones para redes sociais
+- **Google Fonts**: Fonte Inter para tipografia
 
-## 🚀 Tecnologias
+## 📁 Estrutura do Projeto
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+```
+DevLinks/
+├── assets/
+│   ├── avatar-dark.jpeg
+│   ├── avatar-light.jpg
+│   ├── bg-desktop-light.jpg
+│   ├── bg-desktop.jpg
+│   ├── bg-mobile-light.jpg
+│   ├── bg-mobile.jpg
+│   ├── moon-stars.svg
+│   └── sun.svg
+├── index.html
+├── script.js
+├── style.css
+└── README.md
+```
 
-- HTML e CSS
-- JavaScript
-- Git e Github
-- Figma
+## 🎨 Características do Design
 
-## 💻 Projeto
+### Modo Escuro (Padrão)
+- Fundo escuro com imagem de fundo
+- Texto em branco
+- Avatar com borda clara
+- Ícone de lua e estrelas no switch
 
-O DevLinks é um agregador de links para usar como cartão de visitas online.
+### Modo Claro
+- Fundo claro com imagem de fundo adaptada
+- Texto em preto
+- Avatar com borda escura
+- Ícone de sol no switch
 
-## 🔖 Layout
+## 🔧 Como Usar
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/O1UJ9tx4bbSQeH4TLr7UiH/DevLinks-•-Projeto-Discover-(Community)?node-id=10-620&p=f&t=4NxbgAtybcD04MpF-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+1. Clone o repositório:
+```bash
+git clone https://github.com/DevAraujo128/DevLinks.git
+```
 
-## :memo: Licença
+2. Abra o arquivo `index.html` em seu navegador
 
-Esse projeto está sob a licença MIT.
+3. Personalize os links e informações no arquivo `index.html`
+
+4. Modifique as cores e estilos no arquivo `style.css`
+
+## 📱 Responsividade
+
+O projeto é totalmente responsivo e se adapta a diferentes tamanhos de tela:
+
+- **Mobile**: Layout otimizado para dispositivos móveis
+- **Desktop**: Layout expandido para telas maiores
+- **Imagens de fundo**: Diferentes imagens para mobile e desktop
+
+## 🎯 Personalização
+
+### Alterando Links
+Edite as seções no `index.html`:
+```html
+<ul>
+  <li>
+    <a href="SEU_LINK" target="_blank">Seu texto</a>
+  </li>
+</ul>
+```
+
+### Alterando Redes Sociais
+Modifique a seção `#social-links`:
+```html
+<div id="social-links">
+  <a href="SEU_GITHUB" target="_blank">
+    <ion-icon name="logo-github"></ion-icon>
+  </a>
+</div>
+```
+
+### Alterando Cores
+As cores são definidas através de variáveis CSS no arquivo `style.css`:
+```css
+:root {
+  --text-color: #ffffff;
+  --surface-color: rgba(255, 255, 255, 0.05);
+  /* ... outras variáveis */
+}
+```
+
+## 🚀 Deploy
+
+Para fazer o deploy do projeto, você pode usar:
+
+- **GitHub Pages**: Conecte seu repositório ao GitHub Pages
+- **Netlify**: Arraste a pasta do projeto para o Netlify
+- **Vercel**: Conecte seu repositório ao Vercel
+
+## 👨‍💻 Autor
+
+**João Araujo**
+- GitHub: [@DevAraujo128](https://github.com/DevAraujo128)
+- LinkedIn: [João Pedro Araújo Rodrigues](www.linkedin.com/in/joão-pedro-araújo-rodrigues-717170240)
+
+## 📄 Licença
+
+Este projeto foi desenvolvido durante o curso Explorer da [Rocketseat](https://rocketseat.com.br/).
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+Feito com ❤ pela [Rocketseat](https://rocketseat.com.br/) 
